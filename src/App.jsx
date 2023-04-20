@@ -7,12 +7,9 @@ function App() {
   const [componentType, setComponentType] = useState('unique');
 
   return (
-    <>
-      <button onClick={() => componentType == 'unique' ? setComponentType('multiple') : setComponentType('unique') }>Alterar</button>
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}>
-        { componentType == 'unique' ? <GrupoAvaliacao /> : <Avaliacao /> }
-      </div>
-    </>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}>
+      { componentType == 'unique' ? <GrupoAvaliacao /> : <Avaliacao /> }
+    </div>
   )
 }
 
